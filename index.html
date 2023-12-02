@@ -5,14 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anthony's Portfolio</title>
+  <style>
+  	div {
+  	    width: 320px;
+  	    height: 50px;
+  	    padding: 10px;
+  	    border: 5px solid gray;
+            margin: 0;
+        }
+    div.relative {
+  	    position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #73AD21;
+     } 
+	  div.absolute {
+  	    position: absolute;
+  	    top: 200px;
+  	    right: 50;
+  	    width: 200px;
+  	    height: 100px;
+  	    border: 3px solid #73AD21;
+	  }
+    div.absolute1 {
+      position: absolute;
+      width: 950px;
+      height: 300px;
+      z-index: 15;
+      top: 35%;
+      left: 30%;
+      right: 30%;
+      margin: -100px 0 0 -150px;
+      background: white;
+	  }
+    div.absolute2 {
+      position: absolute;
+      border: none;
+      width: 1675px;
+      height: 500px;
+      z-index: 15;
+      top: 20%;
+      left: 5%;
+      right: 5%;
+      margin: -10px 0 0 -15px;
+      background: #000435;
+	  }
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      border: 3px solid green; 
+    }
+    .header {
+      padding: 60px;
+      border: none;
+      text-align: center;
+      background: white;
+      min-width:750px;
+      width: 93%;
+      color: white;
+      font-size: 30px;
+    } 
+    a {
+    color:green;
+    line-height: 1em;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    margin: 5px;
+    } 
+  </style>
   </head>
   <body>
-    <nav>
-      <a href="./index.html">Home</a>
-      <a href="./about.html">About</a>
-      <a href="./contact.html">Contact</a>
-    </nav>
-	<h1>Hello World</h1>
-	<p>I'm hosted with GitHub Pages.</p>
+    <div class="header">
+      <nav>
+        <a style="text-decoration: none" href="./index.html">
+          <font face="3ds" style = "color: #000435"> ABOUT</font>
+        </a>
+        <a style="text-decoration: none" href="./about.html">
+          <font face="3ds" style = "color: #000435"> PROJECTS</font>
+        </a>
+        <a style="text-decoration: none" href="./contact.html">
+          <font face="3ds" style = "color: #000435"> CONTACT</font>
+        </a>
+      </nav>
+      
+    </div>
+
+    <div class="absolute2"> 
+     
+    </div>
+    <div class="absolute1"> 
+      <font face="Arial" style = "color: #000435"> 
+      Hello all and welcome to my portfolio! My name is Anthony. Some things about me; I'm into tinkering with electronics,
+      motorsports(RallyCross, MotoGP, and F1), combat sports(MMA, Boxing), and casual FPS gaming(Escape From Tarkov).
+
+
+
+      Something I am proud of is being the first college graduate in my immediate family and the first engineer from whole
+      family. I graduated from Cal Poly, SLO and have since worked in test engineering opportunities in the bicycling consumer
+      industry, automotive industry, and automation industry. Currently looking for engineering opportunities in the Aerospace
+      Indistry, as a career goal of mine is to become a Flight Test Engineer.
+      
+      </font>
+        
+    </div>
   </body>
 </html>
+
+
